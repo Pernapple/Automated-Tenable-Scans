@@ -38,7 +38,7 @@ client = TenableIOClient(access_key=accessKey, secret_key=secretKey)
 scanners = {scanner.name: scanner.id for scanner in client.scanners_api.list().scanners}
 scans = {scan.name: scan.id for scan in client.scans_api.list().scans}
 scan_id = client.scans_api.launch(
- #LAUNCH ID GOES HERE,
+ #SCAN ID GOES HERE,
  ScanLaunchRequest(
  alt_targets=finalList
  )
